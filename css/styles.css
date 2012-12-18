@@ -70,7 +70,7 @@ body {
 	width: 360px;
 	height: 640px;
 	/* background: #ffffff; */
-	margin: 150px auto 0 auto;	
+	margin: 0px auto 0 auto;	
 }
 
 #androidHeader {
@@ -95,9 +95,7 @@ body {
 }
 
 .selected {
-	width: 89px;
-	height: 3px;
-	background-color: #ff6600;
+	border-bottom: 3px solid #ff6600;
 }
 
 #navCloud {
@@ -252,7 +250,7 @@ h3 {
 
 #playControls {
 	position: absolute;
-	top: 682px; /* 532 + current margin-top (150) */
+	top: 532px; /* 532 + current margin-top (150) */
 	width: 360px;
 	height: 60px;
 	background-color: #222222;
@@ -364,7 +362,7 @@ h5 {
 
 #androidFooter {
 	position: fixed;
-	top: 742px; /* 592 + current margin-top (150) */
+	top: 592px; /* 592 + current margin-top (150) */
 	width: 360px;
 	height: 48px;
 	
