@@ -67,6 +67,7 @@ body {
 }
 
 #container {
+	position: relative;
 	width: 360px;
 	height: 640px;
 	/* background: #ffffff; */
@@ -175,7 +176,7 @@ h3 {
 	padding-top: 9px; /* originally 13px */
 }
 
-.listAddToStream {
+.listAddToStream, .providerAddToStream {
 	float: right;
 	padding: 30px 20px 0 0;
 }
@@ -268,7 +269,7 @@ h3 {
 	margin: 21px auto 0 auto; /* why does auto not work? */
 }
 
-#play_pause {
+#play_pause, #play_pause_initial {
 	width: 120px;
 	height: 60px;
 	float: left;
@@ -338,9 +339,12 @@ h5 {
 #providerPage {
 	display: none;
 	background-color: #ffffff;
+	margin-top: 80px; /* so the list items don't automatically appear behind the provider info */
 }
 
 .providerInfo {
+	position: fixed;
+	top: 70px;
 	width: 360px;
 	height: 80px;
 	background-color: #e2e2e2;
@@ -358,6 +362,22 @@ h5 {
 }
 
 
+
+
+
+#toast {
+	display: none;
+	position: fixed;
+	top: 520px;
+	padding: 10px;
+	margin-left: 120px;
+	width: 100px;
+	background-color: #404040;
+	font-family: "Roboto", sans-serif;
+	color: #bbbbbb;
+	font-size: 12px;
+	text-align: center;
+}
 
 
 
