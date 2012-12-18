@@ -1,0 +1,368 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end of css reset */
+
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular-webfont.eot');
+    src: url('Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-Regular-webfont.woff') format('woff'),
+         url('Roboto-Regular-webfont.ttf') format('truetype'),
+         url('Roboto-Regular-webfont.svg#RobotoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background-color: #555555;
+}
+
+#container {
+	width: 360px;
+	height: 640px;
+	/* background: #ffffff; */
+	margin: 150px auto 0 auto;	
+}
+
+#androidHeader {
+	width: 360px;
+	height: 25px;
+}
+
+#screen {
+	width: 360px;
+	height: 522px;
+}
+
+#navigation {
+	width: 360px;
+	height: 45px;
+	background-image: url('../images/dark-gradient.png');
+	background-repeat: repeat-x;
+	/* position: fixed;
+	top: 175px;  25 + current margin-top (150) 
+	left: 0px; */
+}
+
+#navCloud {
+	float: left;
+	width: 89px;
+	height: 45px;
+}
+
+#navStream {
+	float: left;
+	width: 89px;
+	height: 45px;
+}
+
+#navExplore {
+	float: left;
+	width: 89px;
+	height: 45px;
+}
+
+#navNowPlaying {
+	float: left;
+	width: 89px;
+	height: 45px;
+}
+
+.nowPlayingWaveForm {
+	padding: 10px 28px 11px 26px;
+}
+
+.navDivider {
+	float: left;
+	width: 2px;
+	height: 45px;
+}
+
+h1 {
+	font-family: "Roboto", sans-serif;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 45px;
+	text-align: center;
+}
+
+h2 {
+	font-family: "Roboto", sans-serif;
+	color: #222222;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+h3 {
+	font-family: "Roboto", sans-serif;
+	color: rgba(0, 0, 0, .27); /* #bbbbbb */
+	font-size: 12px;
+	line-height: 18px; /* originally 21px but there were an extra 3px */
+}
+
+
+
+
+
+/* STREAM */
+
+#streamBody {
+	display: none;
+	background-color: #ffffff;
+}
+
+.listThumb {
+	float: left;
+	padding: 10px;
+}
+
+.listText {
+	float: left;
+	padding-top: 9px; /* originally 13px */
+}
+
+.listAddToStream {
+	float: right;
+	padding: 30px 20px 0 0;
+}
+
+.listItem {
+	width: 360px;
+	height: 80px;
+	border-bottom: 1px solid rgba(0, 0, 0, .1); /* #e5e5e5 */
+}
+
+
+
+
+
+/* EXPLORE */
+
+#exploreBody {
+	display: none;
+	background-color: #f2f2f2;
+	overflow: hidden; /* should be scroll, but it adds an ugly scroll bar! neither (hidden nor scroll) actually hides the overflow, but they do make the #f2f2f2 background appear */
+}
+
+.tile {
+	float: left;
+	margin: 16px 0 0 16px;
+	width: 156px;
+	height: 180px;
+	background-color: #ffffff;
+	border-radius: 2px;
+	box-shadow: 0 0 1px rgba(0, 0, 0, .25);
+}
+
+.tileThumb {
+	width: 140px;
+	height: 140px;
+	margin: 8px 8px 2px 8px;
+}
+
+#exploreBody h2 {
+	text-align: center;
+}
+
+
+
+
+
+/* NOW PLAYING */
+
+#nowPlayingBody {
+	display: none;
+	background-color: #ffffff;
+}
+
+.playerListItem {
+	width: 360px;
+	height: 80px;
+	background-color: #e2e2e2;
+	border-bottom: 1px solid rgba(0, 0, 0, .2); /* #e5e5e5 */
+}
+
+.soundArt {
+	margin: 20px 35px 0 35px; /* why does auto not work? */
+}
+
+.soundWaveform {
+	width: 360px;
+	height: 60px;
+	margin-top: 8px;
+}
+
+#playControls {
+	position: absolute;
+	top: 682px; /* 532 + current margin-top (150) */
+	width: 360px;
+	height: 60px;
+	background-color: #222222;
+}
+
+#previous {
+	width: 120px;
+	height: 60px;
+	float: left;
+}
+
+.previous {
+	display: block; /* to be centered */
+	margin: 21px auto 0 auto; /* why does auto not work? */
+}
+
+#play_pause {
+	width: 120px;
+	height: 60px;
+	float: left;
+}
+
+.pause {
+	display: block;
+	margin: 17px auto 0 auto; /* why does auto not work? */
+}
+
+#next {
+	width: 120px;
+	height: 60px;
+	float: left;
+}
+
+.next {
+	display: block;
+	margin: 21px auto 0 auto; /* why does auto not work? */
+}
+
+
+
+
+
+/* NOTHING PLAYING */
+
+#nothingPlayingBody {
+	height: 100%;
+	background-color: #f2f2f2;
+	overflow: hidden;
+}
+
+.giantPlayButton {
+	display: block;
+	margin: 60px auto 36px auto; /* margin bottom = 40 - 4 (because of line-height) */
+}
+
+h4 {
+	font-family: "Roboto", sans-serif;
+	color: #7F7F7F;
+	font-size: 16px;
+	line-height: 21px;
+	text-align: center;
+}
+
+h5 {
+	font-family: "Roboto", sans-serif;
+	color: #bbbbbb;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 22px;
+}
+
+.scLogo {
+	display: block;
+	margin: 50px auto 0 auto;
+}
+
+
+
+
+
+/* PROVIDER PAGE */
+
+#providerPage {
+	display: none;
+	background-color: #ffffff;
+}
+
+.providerInfo {
+	width: 360px;
+	height: 80px;
+	background-color: #e2e2e2;
+	border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.providerThumb {
+	float: left;
+	padding: 10px;
+}
+
+.providerName {
+	float: left;
+	line-height: 80px;
+}
+
+
+
+
+
+#androidFooter {
+	position: fixed;
+	top: 742px; /* 592 + current margin-top (150) */
+	width: 360px;
+	height: 48px;
+	
+}
+
+
+
+
+
+
+
