@@ -75,6 +75,7 @@ body {
 }
 
 #androidHeader {
+	display: none;
 	width: 360px;
 	height: 25px;
 }
@@ -246,7 +247,7 @@ h3 {
 
 .scrim {
 	position: absolute;
-	top: 151px;
+	top: 126px;
 	width: 360px;
 	height: 381px;
 	z-index: 50;
@@ -254,7 +255,7 @@ h3 {
 
 .soundWaveform {
 	position: absolute;
-	top: 472px; /* not sure why it ends up here, but it does */
+	top: 447px; /* not sure why it ends up here, but it does */
 	width: 360px;
 	height: 60px;
 	z-index: 100;
@@ -262,7 +263,7 @@ h3 {
 
 #playControls {
 	position: absolute;
-	top: 532px; /* 532 + current margin-top (150) */
+	top: 507px; /* 532 + current margin-top (150) */
 	width: 360px;
 	height: 60px;
 	background-color: #222222;
@@ -354,7 +355,7 @@ h5 {
 
 .providerInfo {
 	position: fixed;
-	top: 70px;
+	top: 45px;
 	width: 360px;
 	height: 80px;
 	background-color: #e2e2e2;
@@ -378,7 +379,7 @@ h5 {
 #toast {
 	display: none;
 	position: fixed;
-	top: 500px;
+	top: 475px;
 	padding: 10px;
 	margin-left: 117px;
 	width: 126px;
@@ -387,6 +388,7 @@ h5 {
 	color: #bbbbbb;
 	font-size: 12px;
 	text-align: center;
+	z-index: 999;
 }
 
 
