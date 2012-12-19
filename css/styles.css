@@ -368,11 +368,11 @@ h5 {
 #toast {
 	display: none;
 	position: fixed;
-	top: 520px;
+	top: 500px;
 	padding: 10px;
-	margin-left: 120px;
-	width: 100px;
-	background-color: #404040;
+	margin-left: 117px;
+	width: 126px;
+	background-color: rgba(51, 51, 51, .90); /* #404040 */
 	font-family: "Roboto", sans-serif;
 	color: #bbbbbb;
 	font-size: 12px;
