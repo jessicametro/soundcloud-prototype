@@ -241,13 +241,23 @@ h3 {
 }
 
 .soundArt {
-	margin: 20px 35px 0 35px; /* why does auto not work? */
+	/* margin: 20px 35px 0 35px;  why does auto not work? */
+}
+
+.scrim {
+	position: absolute;
+	top: 151px;
+	width: 360px;
+	height: 381px;
+	z-index: 50;
 }
 
 .soundWaveform {
+	position: absolute;
+	top: 472px; /* not sure why it ends up here, but it does */
 	width: 360px;
 	height: 60px;
-	margin-top: 8px;
+	z-index: 100;
 }
 
 #playControls {
